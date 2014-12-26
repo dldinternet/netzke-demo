@@ -1,5 +1,8 @@
+# Rails.application.routes.draw do
+#   get '/apple-touch-icon.png' => redirect('assets/rails.png')
+# end
 NetzkeDemo::Application.routes.draw do
-  get "loose_components/index"
+  get 'components/index'
 
   netzke
   # The priority is based upon order of creation:

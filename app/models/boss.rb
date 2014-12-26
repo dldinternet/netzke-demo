@@ -22,4 +22,7 @@ class Boss < ActiveRecord::Base
     clerks.count
   end
 
+  def self.accessible_attributes(role=:default)
+    [:first_name,:last_name,:email,:salary].map{|e| [e, e.to_s]}.flatten
+  end
 end

@@ -6,4 +6,7 @@ class LooseComponentsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  def setup
+    @controller = ComponentsController.new
+  end
 end
